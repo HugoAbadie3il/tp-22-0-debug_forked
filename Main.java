@@ -17,19 +17,19 @@ public class Main {
             count -= 1;
         }
 
-        // Problème 4
-        String message = "Bonjour";
+        // Problème 4 - SOLVED index out of string
+        String message = "Bonjour le monde !";
         System.out.println("Longueur du message : " + message.length());
         char character = message.charAt(10);
         System.out.println("Caractère à l'indice 10 : " + character);
 
-        // Problème 5
+        // Problème 5 - SOLVED == =/= compareTo
         String str1 = "Hello";
         String str2 = new String("Hello");
-        System.out.println("Comparaison de chaînes : " + (str1 == str2));
+        System.out.println("Comparaison de chaînes : " + ((str1.compareTo(str2)) == 0));
 
-        // Problème 6
-        Main mainObj = null;
+        // Problème 6 - SOLVED initialization to null
+        Main mainObj = new Main();
         mainObj.method();
     }
 
