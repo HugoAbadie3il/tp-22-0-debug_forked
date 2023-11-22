@@ -1,20 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        // Problème 1
+        // Problème 1 - SOLVED last index is length-1
         int[] numbers = {1, 2, 3, 4, 5};
-        for (int i = 0; i <= numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.println("Number at index " + i + ": " + numbers[i]);
         }
 
-        // Problème 2
+        // Problème 2 - SOLVED divide by 0
         double result = calculateValue(5, 0);
         System.out.println("Result: " + result);
 
-        // Problème 3
+        // Problème 3 - SOLVED stop case unreachable
         int count = 10;
         while (count > 0) {
             System.out.println("Count: " + count);
-            count += 2;
+            count -= 1;
         }
 
         // Problème 4
@@ -35,10 +35,10 @@ public class Main {
 
     // Méthode pour le problème de division par zéro
     public static int calculateValue(int a, int b) {
-        return a / b;
+        return b != 0 ? a/b : 0;
     }
 
-    // Méthode pour le problème d'utilisation incorrecte d'une méthode de classe
+    // Méthode pour le problème d'utilisation incorrecte d'une méthode de ce
     public void method() {
         System.out.println("Méthode appelée !");
     }
